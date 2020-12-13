@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset='utf-8'>
+        <title>Tip Calculator</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./js/index.js"></script>
+        <link rel="stylesheet" href="./css/index.css">
+        
+        
+    </head>
+
+    <body>
+        
+        
+            <h1>Tip Calculator</h1>
+            
+            <div class="row calculator-container">
+                <div class="column meal-form-container">
+                    <form>
+                        <label for="mealCost">Enter cost of meal:</label><br>
+                        <input type="number" id="mealCost" name="numonly" placeholder="Enter value" required><p>
+                        
+                    </form>
+
+                    <button type="button" id="enter">Enter</button>
+                    <button type="reset" id="clear">Clear</button>
+
+                    <p>
+                        <label for="total">MEAL TOTAL:</label><br>
+                        <input type="text" id="total" disabled />
+                    </p>
+                </div>
+                    
+                
+                <div class="column tip-container">
+                    <h4>Desired Tip Percentage</h4>
+                    <div class="percentage-container">
+                        <div class="row">
+                            <div class="column">
+                                <button type="button" class="tip" value=.15 onclick="calculateTip(this.value)" >15%</button>
+                            </div>
+                            <div class="column">
+                                <button type="button" class="tip" value=.18 onclick="calculateTip(this.value)" >18%</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <button type="button" class="tip" value=.20 onclick="calculateTip(this.value)" >20%</button>
+                            </div>
+                            <div class="column">
+                                <button type="button" class="tip" value=.25 onclick="calculateTip(this.value)" >25%</button>
+                            </div>
+                        </div>
+                        
+                        <p>Or.. add your own tip!</p>
+
+                        <form>
+                            <label for="customTip">Custom Tip:</label>
+                            <input type="text" id="customTip" name="numonly" ><button type="button" id="addTip">Add</button>
+                            <p>
+                            <input type="radio" name="chooseone" id="dollars" value="dollars"><label for="dollars">Dollars</label>
+                            <input type="radio" name="chooseone" id="percentage" value="percentage"><label for="percentage">Percentage</label><p>
+                            <label for="totalTip">Total Tip Amount: </label>
+                            <input type="text" id="totalTip" disabled />       
+                            
+                        </form>
+                    </div>
+                </div>
+            </div> 
+        
+    </body>
+
+</html>

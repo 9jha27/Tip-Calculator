@@ -1,0 +1,82 @@
+h1{
+    text-align: center;
+    font-weight: bold;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    align-content: center;
+    
+}
+
+.row {
+    display: flex;
+    padding: 2px;
+}
+.column {
+    flex: 50%;
+}
+.calculator-container {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    background-color: blanchedalmond;
+    max-height: 400px;
+    max-width: 600px;
+    padding: 2em;
+}
+
+.meal-form-container {
+    height: 100%;
+    margin: auto;
+    padding: 20px;
+
+}
+
+.tip-container {
+    height: 100%;
+    width: 100%;
+}
+
+.percentage-container{
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    height: 100%;
+    padding: 20px;
+    position: relative;
+
+}
+
+label {
+    font-weight: bold;
+}
+/***********Button CSS***********/
+button {
+    width: 100px;
+    height: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#enter {
+    background-color: skyblue;
+}
+
+#clear {
+    background-color: tomato;
+}
+
+#tip {
+    background-color: lightgray;
+}
+
+#addTip {
+    width: 35px;
+    height: 30px;
+    font-size: .8em;
+    padding: initial;
+}
